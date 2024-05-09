@@ -11,13 +11,13 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(#222527, #161819, #4e4e4e);
+  background: rgba(255, 255, 255, 0.1);
 }
 #paragraph {
-  color: #646669;
+  color: #fff;
 }
 .result-details {
-  color: white;
+  color: #fff;
 }
 .wrapper {
   width: 700px;
@@ -29,7 +29,7 @@ body {
   /* (From style1.css) */
   /* height: 520px;
   width: 400px; */
-  background-color: rgba(255, 255, 255, 0.13);
+  background-color: rgba(255, 255, 255, 0.1);
   /* position: absolute;  */
   /* transform: translate(-50%, -50%); */
   /* top: 50%;
@@ -61,7 +61,6 @@ body {
   font-size: 21px;
   text-align: justify;
   letter-spacing: 1px;
-  /* word-break: break-all; */
   word-wrap: break-word; /* Break words to the next line if they exceed the container width */
 }
 .typing-text p span {

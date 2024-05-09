@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Design by foolishdeveloper.com -->
-    <title>Login Page</title>
+  <head>    
+    <title>Code Sprint</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -13,16 +12,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/background.css" />
-    <link rel="stylesheet" href="./styles/nav-bar-style.css" />
-    <link rel="stylesheet" href="./styles/sign-in-style.css" />
+    <link rel="stylesheet" href="../styles/background.css" />
+    <link rel="stylesheet" href="../styles/nav-bar-style.css" />
+    <link rel="stylesheet" href="../styles/sign-in-style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="./assets/img/logo.png" type="image/png">
-    <script src="./js/typeMaster.js" defer></script>
-    <link rel="stylesheet" href="./styles/typing-master-style.css">
+    <link rel="stylesheet" href="../styles/typing-master-style.css" />
+    <link rel="icon" href="../assets/img/logo.png" type="image/png">
+    <script src="../js/typeMaster.js" defer></script>
   </head>
   <body>
     <!-- Top Nav Bar -->
@@ -40,6 +39,17 @@
       </nav>
     </header>    
 
+    <!-- Stars background -->
+    <div class="container">
+    <div class="bg"></div>
+
+    <div class="star-field">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div>
+
+    <!-- Typing master Card -->
     <div class="wrapper">
       <!-- Input field for user typing -->
       <input type="text" class="input-field" />
@@ -79,16 +89,6 @@
         </div>
       </div>
     </div>
-    <!-- Stars background -->
-    <div class="container">
-    <div class="bg"></div>
-
-    <div class="star-field">
-      <div class="layer"></div>
-      <div class="layer"></div>
-      <div class="layer"></div>
-    </div>
-
     <script>
       // Get the container element
       const container = document.querySelector(".container");

@@ -1,0 +1,57 @@
+1 -- Creating and uploading folder/repository in GitHub
+mkdir myproject
+git init //this command will create an empty repository
+git add . //add all the files to the repository
+git commit -m "Your message"  //put a message for commit to track changes
+git push //finally upload all the files
+
+2-- Accessing same repository in other system
+Get the url of repository
+git clone url //This will copy all the files
+git pull url //This will not copy entire project but only the part where changes are made
+
+3 -- Connect to repository
+git remote add origin url
+
+4-- Push changes to repository
+git push -u origin master
+
+5-- Important git commands
+git init: Initialize a new Git repository.
+git add <file>: Add a file to the staging area.
+git add .: Add all files in the current directory and its subdirectories to the staging area.
+git commit -m "<message>": Commit staged changes with a descriptive message.
+git status: View the status of files in the repository.
+git log: View the commit history.
+git remote add <name> <URL>: Add a remote repository.
+git push <remote> <branch>: Push changes to a remote repository.
+git pull <remote> <branch>: Pull changes from a remote repository.
+
+6-- What is stagging area in git
+It is like waiting area where we prepare changes before commit like we can specify which changes to be included in next commit, file are not upload, just information is shared.
+
+1. What is Git, and why is it used in software development?
+Git is a distributed version control system used for tracking changes in source code during software development. It allows multiple developers to collaborate on a project, maintain a history of changes, and easily revert to previous states.
+
+2. Explain the difference between Git and GitHub.
+Git is a version control system, while GitHub is a platform that hosts Git repositories and provides additional collaboration features such as issue tracking, pull requests, and project management tools.
+
+3. What are the main advantages of using Git?
+Some advantages of Git include:
+Distributed version control: Each developer has a full copy of the repository, allowing them to work offline and independently.
+Branching and merging: Git makes it easy to create and merge branches, enabling parallel development and feature isolation.
+History tracking: Git maintains a complete history of changes, allowing developers to review and revert to previous versions as needed.
+Explain the Git workflow.
+4. Common Git workflows include centralized, feature branching, and Gitflow. Candidates should understand how branches are used for development, how changes are merged, and how pull requests facilitate code review and collaboration.
+5. What is a commit in Git?
+A commit is a snapshot of changes to files in a repository at a specific point in time. Each commit has a unique identifier (SHA-1 hash) and includes metadata such as the author, timestamp, and commit message.
+6. What is a branch in Git?
+A branch in Git is a lightweight movable pointer to a commit. It allows developers to work on separate lines of development without affecting the main codebase. Branches can be created, merged, and deleted as needed.
+7. Explain the difference between a merge and a rebase.
+A merge combines changes from one branch into another, creating a new merge commit. A rebase moves the base of a branch to a different commit, replaying the changes on top of the new base. Rebase is used to maintain a linear history and can be preferred for feature branches.
+What is a pull request (PR) in Git?
+A pull request is a feature commonly used in hosted Git platforms like GitHub and GitLab. It allows developers to propose changes to a repository, review them, and merge them into the main codebase. Pull requests facilitate code review, collaboration, and project management.
+8. How do you resolve merge conflicts in Git?
+Merge conflicts occur when Git cannot automatically merge changes from different branches. To resolve conflicts, developers need to manually edit the conflicting files, choose which changes to keep, and then commit the resolved files.
+9. What are Git hooks?
+Git hooks are scripts that run automatically at certain points in the Git workflow, such as before or after a commit, push, or merge. Hooks allow developers to automate tasks, enforce policies, and integrate with external tools.
