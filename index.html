@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Design by foolishdeveloper.com -->
+    <title>Login Page</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/background.css" />
+    <link rel="stylesheet" href="./styles/nav-bar-style.css" />
+    <link rel="stylesheet" href="./styles/sign-in-style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Top Nav Bar -->
+    <header class="header">
+      <a href="#" class="logo"><img src="./assets/img/logo-bg-removed.png" alt="CodeScrint.com" height="42" width="92" style="padding-top: 10px; cursor: pointer;"></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="#">About</a>
+        <a href="./views/sign-up.html">Create Account</a>
+        <a href="./views/sign-in.html">Login</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>    
+
+    <!-- Stars background -->
+    <div class="container">
+    <div class="bg"></div>
+
+    <div class="star-field">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div>
+
+    <script>
+      // Get the container element
+      const container = document.querySelector(".container");
+
+      // Repeat the process 100 times
+      for (let i = 0; i < 100; i++) {
+        // Create circle container div
+        const circleContainer = document.createElement("div");
+        circleContainer.classList.add("circle-container");
+
+        // Create circle div
+        const circle = document.createElement("div");
+        circle.classList.add("circle");
+
+        // Append circle div to circle container div
+        circleContainer.appendChild(circle);
+
+        // Append circle container div to the main container
+        container.appendChild(circleContainer);
+      }
+    </script>
+    <script src="./js/nav-bar-script.js"></script>
+  </body>
+</html>
