@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="../styles/sign-in-style.css" />
     <link rel="stylesheet" href="../styles/background.css" />
     <link rel="stylesheet" href="../styles/nav-bar-style.css" />
@@ -11,12 +11,20 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="../assets/img/logo.png" type="image/png">
+    <link rel="stylesheet" href="../styles/about-us.css" />
+    <link rel="icon" href="../assets/img/logo.png" type="image/png" />
   </head>
   <body>
     <!-- Top Nav Bar -->
     <header class="header">
-      <a href="#" class="logo"><img src="../assets/img/logo-bg-removed.png" alt="CodeScrint.com" height="42" width="92" style="padding-top: 10px; cursor: pointer;"></a>
+      <a href="#" class="logo"
+        ><img
+          src="../assets/img/logo-bg-removed.png"
+          alt="CodeScrint.com"
+          height="42"
+          width="92"
+          style="padding-top: 10px; cursor: pointer"
+      /></a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
@@ -33,36 +41,41 @@
     <!-- Stars background -->
     <div class="container">
       <div class="bg"></div>
-  
+
       <div class="star-field">
         <div class="layer"></div>
         <div class="layer"></div>
         <div class="layer"></div>
       </div>
 
-    <!-- Registration form -->
-    <div class="con1">
-      <div class="wrapper">
-        <form action="" name="signin">
-          <h1>Login</h1>
-          <div class="input-box">
-            <div class="input-field">
-              <input type="text" placeholder="Username" required  name="username" autocomplete="additional-name"/>
-              <i class="bx bxs-user"></i>
+      <!-- About Us Section -->
+      <div class="con1">
+        <div class="wrapper">
+          <div class="text-column">
+            <h1>About Us</h1>
+            <p>
+              Welcome to CodeScrint.com, your go-to platform for learning and
+              improving your coding skills. We offer a range of courses and
+              resources designed to help you succeed in the world of
+              programming.
+            </p>
+            <hr class="horizontal-line" />
+            <h2>Our Team</h2>
+            <div class="team-member">
+              <img src="../assets/img/team-member1.jpg" alt="Team Member" />
+              <h3>John Doe</h3>
+              <p>CEO & Founder</p>
             </div>
-
-            <div class="input-field">
-              <input type="password" placeholder="Password" required name="password"/>
-              <i class="bx bxs-lock-alt"></i>
+            <div class="team-member">
+              <img src="../assets/img/team-member2.jpg" alt="Team Member" />
+              <h3>Jane Smith</h3>
+              <p>Head of Operations</p>
             </div>
           </div>
-
-          <label><input type="checkbox" name="checkbox"/>Remember me</label>
-
-          <button type="button" class="btn">Login</button>
-        </form>
+        </div>
       </div>
     </div>
+
     <!-- Javascript code -->
     <script>
       // Get the container element

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts</title>
-    <link rel="stylesheet" href="../styles/sign-in-style.css" />
+    <link rel="stylesheet" href="../styles/contact-style.css" />
     <link rel="stylesheet" href="../styles/background.css" />
     <link rel="stylesheet" href="../styles/nav-bar-style.css" />
     <link
@@ -40,29 +40,71 @@
         <div class="layer"></div>
       </div>
 
-    <!-- Registration form -->
+    <!-- Contacts form -->
     <div class="con1">
       <div class="wrapper">
-        <form action="" name="signin">
-          <h1>Login</h1>
+        <form action="" name="contactForm">
+          <h1>Send Message</h1>
           <div class="input-box">
             <div class="input-field">
-              <input type="text" placeholder="Username" required  name="username" autocomplete="additional-name"/>
-              <i class="bx bxs-user"></i>
+              <label for="name">Full Name</label>
+              <div class="icon-input">
+                <i class="bx bxs-user"></i>
+                <input type="text" id="name" placeholder="Full Name" required name="name" autocomplete="name"/>
+              </div>
             </div>
 
             <div class="input-field">
-              <input type="password" placeholder="Password" required name="password"/>
-              <i class="bx bxs-lock-alt"></i>
+              <label for="email">Email</label>
+              <div class="icon-input">
+                <i class="bx bxs-envelope"></i>
+                <input type="email" id="email" placeholder="Email" required name="email" autocomplete="email"/>
+              </div>
             </div>
+
+            <div class="input-field">
+              <label for="subject">Subject</label>
+              <div class="icon-input">  
+                <i class="bx bxs-file"></i>
+                <input type="text" id="subject" placeholder="Subject" required name="subject"/>
+              </div>
+            </div>
+
+            <div class="input-field relative-field">
+              <label for="message">Message</label>
+              
+              <textarea id="message" placeholder="Message" required name="message" class="message-box"></textarea>
+            </div>
+
+            <button type="button" class="btn">Send Message</button>
           </div>
-
-          <label><input type="checkbox" name="checkbox"/>Remember me</label>
-
-          <button type="button" class="btn">Login</button>
         </form>
+        <div class="text-column">
+          <h2>Contact Information</h2>
+          <div class="text-column-border">
+            <div class="contact-item">
+              <i class="bx bxs-envelope"></i>
+              <p><strong>Email:</strong> info@yourcompany.com</p>
+            </div>
+            <div class="contact-item">
+              <i class="bx bxs-phone"></i>
+              <p><strong>Phone:</strong> +1-123-456-7890</p>
+            </div>
+            <div class="contact-item">
+              <i class="bx bxs-map"></i>
+              <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+            </div>
+            <div class="contact-item">
+              <i class="bx bxs-time-five"></i>
+              <p><strong>Business Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
+            </div>
+          </div>      
+        </div>                
       </div>
     </div>
+
+
+    
     <!-- Javascript code -->
     <script>
       // Get the container element

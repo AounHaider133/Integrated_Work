@@ -1,0 +1,224 @@
+body {
+  overflow: auto;
+}
+
+.wrapper {
+  width: 750px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  color: #fff;
+  padding: 40px 35px 55px;
+  margin: 0 10px;
+}
+
+.wrapper:hover {
+  margin-top: 5px;
+}
+
+.con1 {
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.wrapper {
+  display: flex;
+  width: 900px; /* Increased width for the form container */
+  justify-content: space-between; /* Space between the two columns */
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.wrapper .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  width: 60%; /* Adjust the width as needed */
+}
+
+.input-box .input-field {
+  position: relative;
+}
+
+.icon-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon-input input {
+  padding-left: 30px; /* Adjust icon padding as needed */
+}
+
+.input-box .input-field input {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 6px;
+  padding: 15px 15px 15px 40px; /* Adjust padding for input fields */
+}
+.input-box .input-field textarea {
+  width: 100%; /* Match the width of the textarea with input fields */
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 6px;
+  padding: 15px; /* Adjust padding for the textarea */
+  resize: vertical;
+  overflow-y: auto;
+}
+
+.input-box .input-field input::placeholder {
+  color: #fff;
+}
+
+.input-box .input-field i {
+  position: absolute;
+  left: 15px;
+  top: 35%;
+  transform: translate(-50%);
+  font-size: 20px;
+}
+
+.relative-field {
+  position: relative;
+}
+
+.relative-field textarea {
+  width: calc(100% - 30px); /* Adjust width to account for icon padding */
+}
+
+.text-column {
+  width: 70%; /* Adjust the width as needed */
+  padding-left: 20px; /* Add padding for separation */
+  border-left: 2px solid #fff; /* Solid border between columns */
+  color: #fff;
+}
+
+.input-field {
+  margin-bottom: 20px; /* Adjust spacing between input fields */
+}
+
+.input-field label {
+  color: #fff; /* Label color */
+  margin-bottom: 5px; /* Adjust spacing */
+}
+
+.message-box {
+  height: 140px; /* Adjust the height as needed */
+  resize: vertical;
+  overflow-y: auto;
+}
+
+.checkbox-field {
+  margin-top: 10px; /* Adjust spacing for checkbox field */
+}
+
+.text-column {
+  width: 50%;
+  padding-left: 20px;
+  color: #fff;
+}
+
+.text-column h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.text-column .text-column-border {
+  position: relative; /* Make the parent div relative */
+  padding: 40px 0; /* Adjust vertical padding */
+}
+
+.text-column .text-column-border::before,
+.text-column .text-column-border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #fff; /* White border color */
+}
+
+.text-column .text-column-border::before {
+  top: 0; /* Top border */
+}
+
+.text-column .text-column-border::after {
+  bottom: 0; /* Bottom border */
+}
+
+.text-column .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust spacing between contact items */
+}
+
+.text-column .contact-item i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.text-column p {
+  margin: 0;
+}
+
+.text-column strong {
+  font-weight: bold;
+}
+
+/* Additional styles for a professional look */
+.text-column {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer; /* Set cursor to pointer */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px); /* Pop out effect on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Add box shadow on hover */
+}
+
+@media (max-width: 576px) {
+  .input-box .input-field {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .con1 {
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+}
