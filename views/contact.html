@@ -7,16 +7,24 @@
     <link rel="stylesheet" href="../styles/contact-style.css" />
     <link rel="stylesheet" href="../styles/background.css" />
     <link rel="stylesheet" href="../styles/nav-bar-style.css" />
+    <link rel="stylesheet" href="../Footer/footer.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="../assets/img/logo.png" type="image/png">
+    <link rel="icon" href="../assets/img/logo.png" type="image/png" />
   </head>
   <body>
     <!-- Top Nav Bar -->
     <header class="header">
-      <a href="#" class="logo"><img src="../assets/img/logo-bg-removed.png" alt="CodeScrint.com" height="42" width="92" style="padding-top: 10px; cursor: pointer;"></a>
+      <a href="#" class="logo"
+        ><img
+          src="../assets/img/logo-bg-removed.png"
+          alt="CodeScrint.com"
+          height="42"
+          width="92"
+          style="padding-top: 10px; cursor: pointer"
+      /></a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
@@ -33,13 +41,13 @@
     <!-- Stars background -->
     <div class="container">
       <div class="bg"></div>
-  
+
       <div class="star-field">
         <div class="layer"></div>
         <div class="layer"></div>
         <div class="layer"></div>
       </div>
-
+    </div>
     <!-- Contacts form -->
     <div class="con1">
       <div class="wrapper">
@@ -50,7 +58,14 @@
               <label for="name">Full Name</label>
               <div class="icon-input">
                 <i class="bx bxs-user"></i>
-                <input type="text" id="name" placeholder="Full Name" required name="name" autocomplete="name"/>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Full Name"
+                  required
+                  name="name"
+                  autocomplete="name"
+                />
               </div>
             </div>
 
@@ -58,22 +73,41 @@
               <label for="email">Email</label>
               <div class="icon-input">
                 <i class="bx bxs-envelope"></i>
-                <input type="email" id="email" placeholder="Email" required name="email" autocomplete="email"/>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                  name="email"
+                  autocomplete="email"
+                />
               </div>
             </div>
 
             <div class="input-field">
               <label for="subject">Subject</label>
-              <div class="icon-input">  
+              <div class="icon-input">
                 <i class="bx bxs-file"></i>
-                <input type="text" id="subject" placeholder="Subject" required name="subject"/>
+                <input
+                  type="text"
+                  id="subject"
+                  placeholder="Subject"
+                  required
+                  name="subject"
+                />
               </div>
             </div>
 
             <div class="input-field relative-field">
               <label for="message">Message</label>
-              
-              <textarea id="message" placeholder="Message" required name="message" class="message-box"></textarea>
+
+              <textarea
+                id="message"
+                placeholder="Message"
+                required
+                name="message"
+                class="message-box"
+              ></textarea>
             </div>
 
             <button type="button" class="btn">Send Message</button>
@@ -98,13 +132,66 @@
               <i class="bx bxs-time-five"></i>
               <p><strong>Business Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
             </div>
-          </div>      
-        </div>                
+          </div>
+        </div>
       </div>
     </div>
 
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img
+            src="../assets/img/logo-bg-removed.png"
+            alt="Code Sprint Logo"
+            class="logo"
+          />
+          <p>
+            Code Sprint is a coding bootcamp that offers a comprehensive program
+            designed to help students become experts in coding with the help of
+            our interactive gamified learning methodology.
+          </p>
+        </div>
+        <div class="col">
+          <h3>
+            Address
+            <div class="underline"><span></span></div>
+          </h3>
+          <address>
+            <p>COMSATS Lahore</p>
+            <p>
+              1.5 KM Defence Rd، off Raiwand Road, Lda Avenue Phase 1 Lda
+              Avenue, Lahore, Punjab 54000
+            </p>
+          </address>
+        </div>
+        <div class="col">
+          <h3>
+            Links
+            <div class="underline"><span></span></div>
+          </h3>
+          <a href="../index.html">Home</a><br />
+          <a href="#">Services</a><br />
+          <a href="../views/about.html">About Us</a><br />
+          <a href="#">Features</a><br />
+          <a href="../views/contact.html">Contacts</a><br />
+        </div>
+        <div class="col">
+          <h3>
+            Contact Us
+            <div class="underline"><span></span></div>
+          </h3>
 
-    
+          <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-whatsapp"></i>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">Code Sprint &copy; 2024 - All Rights Reserved.</p>
+    </footer>
+
     <!-- Javascript code -->
     <script>
       // Get the container element

@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home Page</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="./styles/sign-in-style.css" />
     <link rel="stylesheet" href="./styles/background.css" />
     <link rel="stylesheet" href="./styles/nav-bar-style.css" />
-    <link rel="stylesheet" href="./styles/sign-in-style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="./assets/img/logo.png" type="image/png">
-    <script src="./js/typeMaster.js" defer></script>
-    <link rel="stylesheet" href="./styles/typing-master-style.css">
+    <link rel="stylesheet" href="./styles/about-us.css" />
+    <link rel="icon" href="./assets/img/logo.png" type="image/png" />
   </head>
   <body>
     <!-- Top Nav Bar -->
     <header class="header">
-      <a href="#" class="logo"><img src="./assets/img/logo-bg-removed.png" alt="CodeScrint.com" height="42" width="92" style="padding-top: 10px; cursor: pointer;"></a>
+      <a href="#" class="logo"
+        ><img
+          src="./assets/img/logo-bg-removed.png"
+          alt="CodeScrint.com"
+          height="42"
+          width="92"
+          style="padding-top: 10px; cursor: pointer"
+      /></a>
 
       <i class="bx bx-menu" id="menu-icon"></i>
 
@@ -38,57 +36,52 @@
         <a href="./views/contact.html">Contact</a>
         <a href="./views/typing-master.html">Typing Master</a>
       </nav>
-    </header>    
+    </header>
 
-    <div class="wrapper">
-      <!-- Input field for user typing -->
-      <input type="text" class="input-field" />
-      <div class="content-box">
-        <div class="typing-text">
-          <!-- Paragraph element to display the typing text -->
-          <p id="paragraph"></p>
-        </div>
+    <!-- Stars background -->
+    <div class="container">
+      <div class="bg"></div>
 
-        <div class="content">
-          <ul class="result-details">
-            <!-- List items to display game results -->
-            <li class="time">
-              <p>Time Left:</p>
-              <!-- Span to display the remaining time -->
-              <span><b>60</b>s</span>
-            </li>
-            <li class="mistake">
-              <p>Mistakes:</p>
-              <!-- Span to display the number of mistakes -->
-              <span>0</span>
-            </li>
-            <li class="wpm">
-              <p>WPM:</p>
-              <!-- Span to display words per minute -->
-              <span>0</span>
-            </li>
-            <li class="cpm">
-              <p>CPM:</p>
-              <!-- Span to display characters per minute -->
-              <span>0</span>
-            </li>
-          </ul>
+      <div class="star-field">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+      </div>
 
-          <!-- Button to reset the game and try again -->
-          <button>Try Again</button>
+      <!-- About Us Section -->
+      <div class="con1">
+        <div class="wrapper">
+          <div class="text-column">
+            <h1>About Us</h1>
+            <p>
+              Welcome to CodeScrint.com, your go-to platform for learning and
+              improving your coding skills. We offer a range of courses and
+              resources designed to help you succeed in the world of
+              programming.
+            </p>
+            <hr class="horizontal-line" />
+            <h2>Our Team</h2>
+            <div class="team-member">
+              <img src="./assets/img/team-member1.jpg" alt="Areez" />
+              <h3>Areez Khan</h3>
+              <p>Developer</p>
+            </div>
+            <div class="team-member">
+              <img src="./assets/img/team-member2.jpg" alt="Aon" />
+              <h3>Aon Haider</h3>
+              <p>Project Leader</p>
+            </div>
+            <div class="team-member">
+              <img src="./assets/img/team-member3.jpg" alt="Talha" />
+              <h3>Talha Shafique</h3>
+              <p>Team Member</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Stars background -->
-    <div class="container">
-    <div class="bg"></div>
 
-    <div class="star-field">
-      <div class="layer"></div>
-      <div class="layer"></div>
-      <div class="layer"></div>
-    </div>
-
+    <!-- Javascript code -->
     <script>
       // Get the container element
       const container = document.querySelector(".container");
@@ -110,6 +103,6 @@
         container.appendChild(circleContainer);
       }
     </script>
-    <script src="./js/nav-bar-script.js"></script>
+    <script src="../js/nav-bar-script.js"></script>
   </body>
 </html>
