@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Sprint</title>
+    <title>Code Sprint - Master Your Skills</title>
     <link rel="stylesheet" href="./styles/background.css" />
     <link rel="stylesheet" href="./styles/nav-bar-style.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/home-page.css" />
     <script src="https://kit.fontawesome.com/25e0e61f4f.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -26,9 +27,7 @@
           width="92"
           style="padding-top: 10px; cursor: pointer"
       /></a>
-
       <i class="bx bx-menu" id="menu-icon"></i>
-
       <nav class="navbar">
         <a href="index.html">Home</a>
         <a href="./views/about.html">About</a>
@@ -42,49 +41,48 @@
     <!-- Stars background -->
     <div class="container">
       <div class="bg"></div>
-
       <div class="star-field">
         <div class="layer"></div>
         <div class="layer"></div>
         <div class="layer"></div>
       </div>
     </div>
-    <!-- About Us Section -->
-    <div class="con1">
-      <div class="wrapper">
-        <div class="text-column">
-          <h1>About Us</h1>
-          <p>
-            Welcome to CodeScrint.com, your go-to platform for learning and
-            improving your coding skills. We offer a range of courses and
-            resources designed to help you succeed in the world of programming.
-          </p>
-          <hr class="horizontal-line" />
-          <h2>Our Team</h2>
-          <div class="team-member">
-            <img src="./assets/img/team-member1.jpg" alt="Areez" />
-            <h3>Areez Khan</h3>
-            <p>Developer</p>
-          </div>
-          <div class="team-member">
-            <img src="./assets/img/team-member2.jpg" alt="Aon" />
-            <h3>Aon Haider</h3>
-            <p>Project Leader</p>
-          </div>
-          <div class="team-member">
-            <img src="./assets/img/team-member3.jpg" alt="Talha" />
-            <h3>Talha Shafique</h3>
-            <p>Team Member</p>
-          </div>
+
+    <!-- Page Content - Home Page -->
+    <main>
+      <header class="wrapper">
+        <h1>CodeSprint</h1>
+        <p>Master Your Skills with Interactive Learning</p>
+        <a href="#courses" class="btn">Explore Courses</a>
+      </header>
+
+      <section id="features" class="wrapper">
+        <h2>Key Features</h2>
+        <div class="feature">
+          <img src="interactive-lessons.png" alt="Interactive Lessons" />
+          <h3>Interactive Lessons</h3>
+          <p>Engaging lessons to enhance your learning experience.</p>
         </div>
-      </div>
-    </div>
+        <!-- Add more features here -->
+      </section>
+
+      <section id="courses" class="wrapper">
+        <h2>Course Categories</h2>
+        <div class="course-category">
+          <img src="typing-master.png" alt="Typing Mastery" />
+          <h3>Typing Mastery</h3>
+          <p>Improve your typing speed and accuracy.</p>
+        </div>
+        <!-- Add more course categories here -->
+      </section>
+    </main>
+
     <!-- Page Footer -->
     <footer>
       <div class="row">
         <div class="col">
           <img
-            src="../assets/img/logo-bg-removed.png"
+            src="./assets/img/logo-bg-removed.png"
             alt="Code Sprint Logo"
             class="logo"
           />
@@ -123,7 +121,6 @@
             Contact Us
             <div class="underline"><span></span></div>
           </h3>
-
           <div class="social-icons">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>

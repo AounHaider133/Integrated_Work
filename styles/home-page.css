@@ -1,0 +1,95 @@
+/* Home Page Styles */
+
+/* Body Styles */
+body {
+  overflow: auto;
+}
+
+/* Wrapper Styles */
+.wrapper {
+  width: 750px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  color: #fff;
+  padding: 40px 35px 55px;
+  margin: 0 auto 20px; /* Centered and added bottom margin for spacing */
+  transition: margin-top 0.3s ease; /* Added transition for hover effect */
+}
+
+.wrapper:hover {
+  margin-top: 5px;
+}
+
+/* Main Content Styles */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#features,
+#courses {
+  margin-bottom: 20px; /* Reduced margin for spacing */
+}
+
+.feature,
+.course-category {
+  width: 100%; /* Full width for transparent cards */
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: margin-top 0.3s ease; /* Added transition for hover effect */
+}
+
+.feature:hover,
+.course-category:hover {
+  margin-top: 5px;
+}
+
+.feature img,
+.course-category img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  transition: background-color 0.3s ease; /* Added transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #f0f0f0; /* Darker background on hover */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 576px) {
+  .input-box .input-field {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .con1 {
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+}
