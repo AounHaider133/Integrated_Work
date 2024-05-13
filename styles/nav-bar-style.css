@@ -46,9 +46,9 @@
   transition: 0.5s;
 }
 
-.header:hover::before {
-  left: 100%;
-}
+/* .header:hover::before {
+  left: 50%;
+} */
 
 .logo {
   color: #fff;
