@@ -32,7 +32,7 @@ main {
 
 #features,
 #courses {
-  margin-bottom: 20px; /* Reduced margin for spacing */
+  margin-bottom: 100px; /* Reduced margin for spacing */
 }
 
 .feature,
@@ -46,6 +46,7 @@ main {
   color: #fff;
   padding: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
   transition: margin-top 0.3s ease; /* Added transition for hover effect */
 }
 
@@ -91,5 +92,43 @@ main {
   .con1 {
     margin-top: 90px;
     margin-bottom: 10px;
+  }
+}
+
+.HomeText {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.text {
+  font-size: 10vw;
+  color: #fff;
+  letter-spacing: 10px;
+  font-family: monospace;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(10) forwards,
+    cursor 0.4s step-end infinite alternate;
+  margin: 0 auto;
+  background: linear-gradient(to right, #2d0b00, #ffd700);
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%; /* Let the text expand to its full width */
   }
 }
