@@ -1,0 +1,116 @@
+.con1 {
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.wrapper {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.horizontal-line {
+  border: none;
+  height: 2px; /* Adjust the height of the line as needed */
+  background-color: #fff; /* Set the color of the line */
+  margin: 20px 0; /* Adjust margin top and bottom to position the line */
+}
+
+/* Common styles */
+.text-column {
+  width: 80%;
+  border-radius: 125px;
+  padding-left: 20px;
+  border-left: 2px solid #fff;
+  color: #fff;
+}
+
+.text-column h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.text-column .text-column-border {
+  position: relative;
+  padding: 40px 0;
+}
+
+.text-column .text-column-border::before,
+.text-column .text-column-border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #fff;
+}
+
+.text-column .text-column-border::before {
+  top: 0;
+}
+
+.text-column .text-column-border::after {
+  bottom: 0;
+}
+
+.text-column .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.text-column .contact-item i {
+  margin-right: 10px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.text-column p {
+  margin: 0;
+}
+
+.text-column strong {
+  font-weight: bold;
+}
+
+/* Additional styles for a professional look */
+.text-column {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack columns in mobile view */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Full width for mobile */
+  }
+
+  .wrapper h1 {
+    text-align: center; /* Center align h1 in mobile view */
+  }
+
+  .text-column {
+    padding-left: 0; /* Remove left padding in mobile view */
+    border-left: none; /* Remove left border in mobile view */
+  }
+
+  .text-column h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

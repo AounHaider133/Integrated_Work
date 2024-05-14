@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <title>Code Sprint</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/background.css" />
+    <link rel="stylesheet" href="../styles/nav-bar-style.css" />
+    <!-- <link rel="stylesheet" href="../styles/sign-in-style.css" /> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="../styles/typing-master-style.css" />
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="icon" href="../assets/img/logo.png" type="image/png">
+    <script src="../js/typeMaster.js" defer></script>
+    <script src="https://kit.fontawesome.com/25e0e61f4f.js"></script>
+  </head>
+  <body>
+    
+    <!-- Top Nav Bar -->
+    <header class="header">
+      <a href="#" class="logo"><img src="../assets/img/logo-bg-removed.png" alt="CodeScrint.com" height="42" width="92" style="padding-top: 10px; cursor: pointer;"></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sign-up.html">Create Account</a>
+        <a href="sign-in.html">Login</a>
+        <a href="contact.html">Contact</a>
+        <a href="typing-master.html">Typing Master</a>
+      </nav>
+    </header>    
+
+    <!-- Stars background -->
+    <div class="container">
+    <div class="bg"></div>
+
+    <div class="star-field">
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div>
+
+    <!-- Typing master Card -->
+    <div class="wrapper">
+      <!-- Input field for user typing -->
+      <input type="text" class="input-field" />
+      <div class="content-box">
+        <div class="typing-text">
+          <!-- Paragraph element to display the typing text -->
+          <p id="paragraph"></p>
+        </div>
+
+        <div class="content">
+          <ul class="result-details">
+            <!-- List items to display game results -->
+            <li class="time">
+              <p>Time Left:</p>
+              <!-- Span to display the remaining time -->
+              <span><b>60</b>s</span>
+            </li>
+            <li class="mistake">
+              <p>Mistakes:</p>
+              <!-- Span to display the number of mistakes -->
+              <span>0</span>
+            </li>
+            <li class="wpm">
+              <p>WPM:</p>
+              <!-- Span to display words per minute -->
+              <span>0</span>
+            </li>
+            <li class="cpm">
+              <p>CPM:</p>
+              <!-- Span to display characters per minute -->
+              <span>0</span>
+            </li>
+          </ul>
+
+          <!-- Button to reset the game and try again -->
+          <button>Try Again</button>
+        </div>
+      </div>
+    </div>
+    
+   <!-- Page Footer -->
+   <footer>
+    <div class="row">
+      <div class="col">
+        <img
+          src="../assets/img/logo-bg-removed.png"
+          alt="Code Sprint Logo"
+          class="logo"
+        />
+        <p>
+          Code Sprint is a coding bootcamp that offers a comprehensive program
+          designed to help students become experts in coding with the help of
+          our interactive gamified learning methodology.
+        </p>
+      </div>
+      <div class="col">
+        <h3 class="footer-link">
+          Address
+          <div class="underline"><span></span></div>
+        </h3>
+        <address>
+          <p>COMSATS Lahore</p>
+          <p>
+            1.5 KM Defence Rd، off Raiwand Road, Lda Avenue Phase 1 Lda
+            Avenue, Lahore, Punjab 54000
+          </p>
+        </address>
+      </div>
+      <div class="col">
+        <h3 class="footer-link">
+          Links
+          <div class="underline"><span></span></div>
+        </h3>
+        <a href="../index.html">Home</a><br />
+        <a href="#">Services</a><br />
+        <a href="../views/about.html">About Us</a><br />
+        <a href="#">Features</a><br />
+        <a href="../views/contact.html">Contacts</a><br />
+      </div>
+      <div class="col">
+        <h3 class="footer-link">
+          Contact Us
+          <div class="underline"><span></span></div>
+        </h3>
+
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p class="copyright">Code Sprint &copy; 2024 - All Rights Reserved.</p>
+  </footer>
+    <script>
+      // Get the container element
+      const container = document.querySelector(".container");
+
+      // Repeat the process 100 times
+      for (let i = 0; i < 100; i++) {
+        // Create circle container div
+        const circleContainer = document.createElement("div");
+        circleContainer.classList.add("circle-container");
+
+        // Create circle div
+        const circle = document.createElement("div");
+        circle.classList.add("circle");
+
+        // Append circle div to circle container div
+        circleContainer.appendChild(circle);
+
+        // Append circle container div to the main container
+        container.appendChild(circleContainer);
+      }
+    </script>
+    <script src="./js/nav-bar-script.js"></script>
+  </body>
+</html>
