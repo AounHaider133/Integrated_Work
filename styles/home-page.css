@@ -3,6 +3,7 @@
 /* Body Styles */
 body {
   overflow: auto;
+  font-size: 14px;
 }
 
 /* Wrapper Styles */
@@ -11,6 +12,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border: 2px rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 300px;
   backdrop-filter: blur(50px);
   border-radius: 10px;
   color: #fff;
@@ -30,13 +32,29 @@ main {
   align-items: center;
 }
 
+.card-container {
+  width: 85%;
+  color: #fff;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.card img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
 #features,
 #courses {
   margin-bottom: 100px; /* Reduced margin for spacing */
 }
 
 .feature,
-.course-category {
+.course-category,
+.card {
   width: 100%; /* Full width for transparent cards */
   background: rgba(255, 255, 255, 0.1);
   border: 2px rgba(255, 255, 255, 0.2);
@@ -51,7 +69,8 @@ main {
 }
 
 .feature:hover,
-.course-category:hover {
+.course-category:hover,
+.card:hover {
   margin-top: 5px;
 }
 
