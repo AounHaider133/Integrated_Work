@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./styles/nav-bar-style.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/home-page.css" />
+    <link rel="stylesheet" href="./styles/scroll.css" />
     <script src="https://kit.fontawesome.com/25e0e61f4f.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <link rel="icon" href="./assets/img/logo.png" type="image/png" />
+    <script defer src="./js/scroll.js"></script>
   </head>
   <body>
     <!-- Top Nav Bar -->
@@ -54,8 +56,8 @@
 
     <!-- Page Content - Home Page -->
     <main>
-      <div class="card-container">
-        <div class="card">
+      <div class="card-container hidden show">
+        <div class="card hidden show">
           <div class="card-content">
             <img src="./desgin/images/contact-img.svg" alt="CodeSprint.img" />
             <h3>Learn to Code</h3>
@@ -67,7 +69,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card hidden show">
           <div class="card-content">
             <img src="./desgin/images/about-img.svg" alt="CodeSprint.img" />
             <h3>Learn to Code</h3>
@@ -79,7 +81,7 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card hidden show">
           <div class="card-content">
             <img src="./assets/img/logo-bg-removed.png" alt="CodeSprint.img" />
             <h3>Learn to Code</h3>
@@ -93,12 +95,7 @@
         </div>
       </div>
 
-      <header id="features" class="wrapper">
-        <p>Master Your Skills with Interactive Learning</p>
-        <a href="#courses" class="btn">Explore Courses</a>
-      </header>
-
-      <section id="features" class="wrapper">
+      <section id="features" class="wrapper hidden show">
         <h2 style="color: #ffd700">Key Features</h2>
         <div class="feature">
           <img
@@ -111,7 +108,7 @@
         <!-- Add more features here -->
       </section>
 
-      <section id="courses" class="wrapper">
+      <section id="courses" class="wrapper hidden show">
         <h2 style="color: #ffd700">Course Categories</h2>
         <div class="course-category">
           <img src="./assets/img/typing-master.png" alt="Typing Mastery" />

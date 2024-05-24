@@ -7,7 +7,8 @@ body {
 }
 
 /* Wrapper Styles */
-.wrapper {
+.wrapper,
+.card-container {
   width: 750px;
   background: rgba(255, 255, 255, 0.1);
   border: 2px rgba(255, 255, 255, 0.2);
@@ -21,15 +22,12 @@ body {
   transition: margin-top 0.3s ease; /* Added transition for hover effect */
 }
 
-.wrapper:hover {
-  margin-top: 5px;
-}
-
 /* Main Content Styles */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-evenly;
 }
 
 .card-container {
@@ -47,8 +45,36 @@ main {
   border-radius: 5px 5px 0 0;
 }
 
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #0078c2;
+  margin-bottom: 6px;
+}
+
+.card-content p {
+  line-height: 2.5;
+}
+
+@media screen and (max-width: 800px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 #features,
-#courses {
+#courses,
+.card-container {
   margin-bottom: 100px; /* Reduced margin for spacing */
 }
 
@@ -150,4 +176,16 @@ main {
   to {
     width: 70%; /* Let the text expand to its full width */
   }
+}
+
+.card:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.card:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.card:nth-child(4) {
+  transition-delay: 100ms;
 }
