@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="../styles/background.css" />
     <link rel="stylesheet" href="../styles/nav-bar-style.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="./styles/scroll.css" />
     <script src="https://kit.fontawesome.com/25e0e61f4f.js"></script>
-    <script defer src="../js/scroll.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -53,7 +51,7 @@
     </div>
     <!-- Contacts form -->
     <div class="con1">
-      <div class="wrapper hidden show">
+      <div class="wrapper">
         <form action="" name="contactForm">
           <h1>Send Message</h1>
           <div class="input-box">
@@ -198,26 +196,27 @@
 
     <!-- Javascript code -->
     <script>
-      // Get the container element
-      const container = document.querySelector(".container");
+        // Get the container element
+        const container = document.querySelector(".container");
 
-      // Repeat the process 100 times
-      for (let i = 0; i < 100; i++) {
-        // Create circle container div
-        const circleContainer = document.createElement("div");
-        circleContainer.classList.add("circle-container");
+        // Repeat the process 100 times
+        for (let i = 0; i < 100; i++) {
+          // Create circle container div
+          const circleContainer = document.createElement("div");
+          circleContainer.classList.add("circle-container");
 
-        // Create circle div
-        const circle = document.createElement("div");
-        circle.classList.add("circle");
+          // Create circle div
+          const circle = document.createElement("div");
+          circle.classList.add("circle");
 
-        // Append circle div to circle container div
-        circleContainer.appendChild(circle);
+          // Append circle div to circle container div
+          circleContainer.appendChild(circle);
 
-        // Append circle container div to the main container
-        container.appendChild(circleContainer);
-      }
+          // Append circle container div to the main container
+          container.appendChild(circleContainer);
+        }
+      </scrip>
+      <script src="../js/nav-bar-script.js">
     </script>
-    <script src="../js/nav-bar-script.js"></script>
   </body>
 </html>
