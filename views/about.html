@@ -8,29 +8,29 @@
     <link rel="stylesheet" href="../styles/background.css" />
     <link rel="stylesheet" href="../styles/nav-bar-style.css" />
     <link rel="stylesheet" href="../styles/footer.css" />
-
+    <link rel="stylesheet" href="../styles/about-us.css" />
+    <link rel="stylesheet" href="../styles/scroll.css" />
+    <link rel="icon" href="../assets/img/logo.png" type="image/png" />
     <script src="https://kit.fontawesome.com/25e0e61f4f.js"></script>
+    <script defer src="../js/scroll.js"></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../styles/about-us.css" />
-    <link rel="icon" href="../assets/img/logo.png" type="image/png" />
   </head>
   <body>
     <!-- Top Nav Bar -->
     <header class="header">
-      <a href="#" class="logo"
-        ><img
+      <a href="#" class="logo">
+        <img
           src="../assets/img/logo-bg-removed.png"
-          alt="CodeScrint.com"
+          alt="CodeSprint.com"
           height="42"
           width="92"
           style="padding-top: 10px; cursor: pointer"
-      /></a>
-
+        />
+      </a>
       <i class="bx bx-menu" id="menu-icon"></i>
-
       <nav class="navbar">
         <a href="../index.html">Home</a>
         <a href="about.html">About</a>
@@ -44,41 +44,134 @@
     <!-- Stars background -->
     <div class="container">
       <div class="bg"></div>
-
       <div class="star-field">
         <div class="layer"></div>
         <div class="layer"></div>
         <div class="layer"></div>
       </div>
-
-      <!-- About Us Section -->
-      <div class="con1">
-        <div class="wrapper">
-          <div class="text-column">
-            <h1>About Us</h1>
-            <p>
-              Welcome to CodeScrint.com, your go-to platform for learning and
-              improving your coding skills. We offer a range of courses and
-              resources designed to help you succeed in the world of
-              programming.
-            </p>
-            <hr class="horizontal-line" />
-            <h2>Our Team</h2>
-            <div class="team-member">
-              <img src="../assets/img/team-member1.jpg" alt="Areez" />
-              <h3>Areez Khan</h3>
-              <p>Developer</p>
-            </div>
-            <div class="team-member">
-              <img src="../assets/img/team-member2.jpg" alt="Aon" />
-              <h3>Aon Haider</h3>
-              <p>Project Leader</p>
-            </div>
-            <div class="team-member">
-              <img src="../assets/img/team-member3.jpg" alt="Talha" />
-              <h3>Talha Shafique</h3>
-              <p>Team Member</p>
-            </div>
+    </div>
+    <!-- About Us Section -->
+    <div class="con1">
+      <div class="wrapper">
+        <h1>About Us</h1>
+        <div class="text-column hidden show">
+          <img src="../assets/img/logo-bg-removed.png" alt="drag&drop" />
+          <hr />
+          <p>
+            Welcome to <strong>Code Sprint</strong>! Code Sprint is a language
+            learning game featuring interactive exercises and tutorials designed
+            to make anyone a first-class citizen in the field of programming. We
+            aim to simplify coding education with engaging, hands-on
+            experiences.
+          </p>
+        </div>
+        <hr class="horizontal-line" />
+        <div class="text-column hidden show">
+          <h2>Features</h2>
+          <ul>
+            <li class="list-item">
+              <img
+                id="f-logo"
+                class="hidden"
+                src="../assets/img/drag-drop-logo.png"
+                alt="drag&drop"
+              />
+              <div class="align-img text-column">
+                <strong>Drag-and-Drop Interface</strong><br />
+                <hr />
+                Build web applications using a visual programming approach.
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="text-column align-img">
+                <strong>Responsive Design</strong><br />
+                <hr />
+                Utilizes Bootstrap 5 and Tailwind CSS for responsive and
+                reusable components.
+              </div>
+              <img
+                id="f-logo"
+                class="hidden"
+                src="../assets/img/responsive-design-logo.png"
+                alt="drag&drop"
+              />
+            </li>
+            <li class="list-item">
+              <img
+                id="f-logo"
+                class="hidden"
+                src="../assets/img/integrate-ai-logo.png"
+                alt="drag&drop"
+              />
+              <div class="text-column align-img">
+                <strong>AI Integration</strong><br />
+                <hr />
+                Provides design suggestions and optimizes system performance
+                with AI.
+              </div>
+            </li>
+            <li class="list-item">
+              <div class="text-column align-img">
+                <strong>Cloud Support</strong><br />
+                <hr />
+                Backup, fast access, and caching of resources using cloud
+                services.
+              </div>
+              <img
+                id="f-logo"
+                class="hidden"
+                src="../assets/img/cloud-support-logo.jpg"
+                alt="drag&drop"
+              />
+            </li>
+            <li class="list-item">
+              <img
+                id="f-logo"
+                class="hidden"
+                src="../assets/img/backend-management-logo.jpg"
+                alt="drag&drop"
+              />
+              <div class="text-column align-img">
+                <strong>Backend Management</strong><br />
+                <hr />
+                Supports Express.js for backend development and MongoDB as an
+                object-oriented database.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <hr class="horizontal-line" />
+        <div class="text-column hidden show">
+          <h2>Our Team</h2>
+          <div class="team-member">
+            <img
+              id="f-logo"
+              class="hidden"
+              src="../assets/img/areez.jpg"
+              alt="Areez"
+            />
+            <h3>Areez Khan</h3>
+            <p>Project Leader</p>
+          </div>
+          <div class="team-member">
+            <img
+              id="f-logo"
+              class="hidden"
+              src="../assets/img/aon.png"
+              alt="Aon"
+            />
+            <h3>Aon Haider</h3>
+            <p>Project Leader</p>
+          </div>
+          <div class="team-member">
+            <img
+              id="f-logo"
+              class="hidden"
+              src="../assets/img/talha.jpg"
+              alt="Talha"
+            />
+            <h3>Talha Shafique</h3>
+            <p>Project Leader</p>
           </div>
         </div>
       </div>
@@ -128,7 +221,6 @@
             Contact Us
             <div class="underline"><span></span></div>
           </h3>
-
           <div class="social-icons">
             <i class="fab fa-facebook-f"></i>
             <i class="fab fa-twitter"></i>

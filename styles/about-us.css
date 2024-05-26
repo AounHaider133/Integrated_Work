@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
 .con1 {
   box-sizing: border-box;
   overflow: auto;
@@ -5,112 +16,175 @@
   align-items: center;
   justify-content: center;
   margin-top: 150px;
+  margin-bottom: 250px; /* Add this line */
 }
 
 .wrapper {
-  width: 900px;
+  width: 1400px;
+  border-radius: 30px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px; /* Add this line */
 }
 
-.wrapper h1 {
-  font-size: 36px;
-  text-align: left;
+.con1 h1 {
+  font-size: 32px;
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-weight: 700;
+}
+.wrapper h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .horizontal-line {
   border: none;
-  height: 2px; /* Adjust the height of the line as needed */
-  background-color: #fff; /* Set the color of the line */
-  margin: 20px 0; /* Adjust margin top and bottom to position the line */
+  height: 2px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+  width: 100%;
+}
+.align-img {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Common styles */
 .text-column {
-  width: 80%;
-  border-radius: 125px;
-  padding-left: 20px;
-  border-left: 2px solid #fff;
-  color: #fff;
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .text-column h2 {
   font-size: 24px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: 700;
 }
 
-.text-column .text-column-border {
-  position: relative;
-  padding: 40px 0;
+.text-column ul {
+  list-style: disc inside none;
+  padding-left: 0;
 }
 
-.text-column .text-column-border::before,
-.text-column .text-column-border::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: #fff;
-}
-
-.text-column .text-column-border::before {
-  top: 0;
-}
-
-.text-column .text-column-border::after {
-  bottom: 0;
-}
-
-.text-column .contact-item {
-  display: flex;
-  align-items: center;
+.text-column li {
   margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.text-column .contact-item i {
+.text-column li strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.text-column ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0;
+}
+
+.team-member {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+#f-logo {
+  display: inline-block;
+  vertical-align: middle;
   margin-right: 10px;
-  font-size: 24px;
+}
+
+#f-logo,
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+  font-size: 20px;
   color: #fff;
 }
 
-.text-column p {
+.team-member p {
   margin: 0;
+  font-size: 16px;
+  color: #e0e0e0;
 }
 
-.text-column strong {
-  font-weight: bold;
-}
-
-/* Additional styles for a professional look */
-.text-column {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Spacer element */
+.spacer {
+  height: 50px; /* Adjust the height as needed */
 }
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .wrapper {
-    flex-direction: column; /* Stack columns in mobile view */
-    align-items: center; /* Center content vertically */
-    width: 100%; /* Full width for mobile */
-  }
-
-  .wrapper h1 {
-    text-align: center; /* Center align h1 in mobile view */
+    width: 90%;
   }
 
   .text-column {
-    padding-left: 0; /* Remove left padding in mobile view */
-    border-left: none; /* Remove left border in mobile view */
+    padding: 10px;
   }
 
   .text-column h2 {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-size: 20px;
   }
+
+  .text-column li {
+    font-size: 16px;
+  }
+
+  .team-member img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .team-member h3 {
+    font-size: 18px;
+  }
+
+  .team-member p {
+    font-size: 14px;
+  }
+}
+
+#f-logo:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+#f-logo:nth-child(3) {
+  transition-delay: 100ms;
+}
+
+#f-logo:nth-child(4) {
+  transition-delay: 100ms;
+}
+#f-logo:nth-child(4) {
+  transition-delay: 100ms;
+}
+
+#f-logo:nth-child(4) {
+  transition-delay: 100ms;
 }
