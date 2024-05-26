@@ -55,45 +55,66 @@
     <br />
 
     <!-- Page Content - Home Page -->
+    <!-- Page Content - Home Page -->
+    <header id="features" class="wrapper top-card">
+      <p style="font-size: 30px">
+        Master Your Skills with Interactive Learning
+      </p>
+      <button
+        type="button"
+        class="btn btn-login"
+        style="width: 150px; float: left; margin-top: 10px"
+      >
+        Start Journey
+      </button>
+    </header>
+
     <main>
       <div class="card-container hidden show">
         <div class="card hidden show">
           <div class="card-content">
             <img src="./desgin/images/contact-img.svg" alt="CodeSprint.img" />
             <h3>Learn to Code</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-              reiciendis veniam eos error ipsum adipisci sed est vitae pariatur
-              tempore asperiores totam suscipit sapiente, laudantium
-              voluptatibus deserunt libero cupiditate excepturi?
+            <p style="text-align: justify">
+              Embark on your coding journey with our comprehensive learning
+              platform designed for all skill levels. Whether you are a beginner
+              eager to learn the basics or an experienced coder looking to
+              sharpen your skills, our structured lessons, hands-on exercises,
+              and real-world projects will guide you through the complexities of
+              programming.
             </p>
           </div>
         </div>
         <div class="card hidden show">
           <div class="card-content">
             <img src="./desgin/images/about-img.svg" alt="CodeSprint.img" />
-            <h3>Learn to Code</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-              eos quos quis minus pariatur ex consectetur! Natus libero sint
-              dolorem ut magnam. Dolores ratione ad nam, doloremque quasi
-              eveniet dignissimos.
+            <h3>Knowledge Checkpoints</h3>
+            <p style="text-align: justify">
+              Assess and deepen your understanding with our comprehensive
+              multiple-choice questions. Each checkpoint is curated to test your
+              grasp of coding principles, logic, and problem-solving abilities.
+              Strengthen your theoretical knowledge before diving into hands-on
+              coding.
             </p>
           </div>
         </div>
         <div class="card hidden show">
           <div class="card-content">
-            <img src="./assets/img/logo-bg-removed.png" alt="CodeSprint.img" />
-            <h3>Learn to Code</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              deleniti suscipit, tenetur pariatur similique provident numquam
-              dolorum, obcaecati praesentium illum, adipisci nisi incidunt
-              asperiores. Aperiam in laborum explicabo sint harum.
+            <img src="./assets/img/dev.png" alt="CodeSprint.img" />
+            <h3>Code Sprint Challenges</h3>
+            <p style="text-align: justify">
+              Engage in real-world coding scenarios that push the boundaries of
+              your problem-solving skills. Our Code Sprint Challenges simulate
+              actual coding environments, offering tasks that range from
+              debugging to developing complete solutions. Elevate your coding
+              expertise through practice and perseverance.
             </p>
           </div>
         </div>
       </div>
+
+
+      <section id="features" class="wrapper">
 
       <section id="features" class="wrapper hidden show">
         <h2 style="color: #ffd700">Key Features</h2>
@@ -114,6 +135,20 @@
           <img src="./assets/img/typing-master.png" alt="Typing Mastery" />
           <h3>Typing Mastery</h3>
           <p>Improve your typing speed and accuracy.</p>
+        </div>
+        <!-- Add more course categories here -->
+      </section>
+
+      <section id="courses" class="wrapper">
+        <h2 style="color: #ffd700">Self Assesement</h2>
+        <div class="course-category">
+          <img src="./assets/img/quiz.jpg" alt="Typing Mastery" />
+          <h3>Multiple-Choice Challenges</h3>
+          <p>
+            Test your knowledge with our engaging MCQs. Each challenge is
+            designed to reinforce your coding concepts and problem-solving
+            skills.
+          </p>
         </div>
         <!-- Add more course categories here -->
       </section>
@@ -176,5 +211,27 @@
     <!-- Javascript code -->
     <script src="./js/background.js"></script>
     <script src="./js/nav-bar-script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const cards = document.querySelectorAll(".card");
+
+        const observerOptions = {
+          threshold: 0.1, // Trigger when 10% of the card is visible
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target); // Stop observing once it becomes visible
+            }
+          });
+        }, observerOptions);
+
+        cards.forEach((card) => {
+          observer.observe(card);
+        });
+      });
+    </script>
   </body>
 </html>
