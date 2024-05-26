@@ -8,7 +8,8 @@
 }
 
 /* Wrapper Styles */
-.wrapper {
+.wrapper,
+.card-container {
   width: 750px;
   background: rgba(255, 255, 255, 0.1);
   border: 2px rgba(255, 255, 255, 0.2);
@@ -22,6 +23,7 @@
   transition: margin-top 0.3s ease; /* Added transition for hover effect */
 }
 
+<<<<<<< HEAD
 .top-card {
   height: auto; /* Adjusted to fit content */
   padding-bottom: 80px;
@@ -31,11 +33,14 @@
   margin-top: 5px;
 }
 
+=======
+>>>>>>> 679716817b834482da0eae29c12f72fab23174c1
 /* Main Content Styles */
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: space-evenly;
 }
 
 .card-container {
@@ -75,9 +80,42 @@ main {
   border-radius: 5px 5px 0 0;
 }
 
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #0078c2;
+  margin-bottom: 6px;
+}
+
+.card-content p {
+  line-height: 2.5;
+}
+
+@media screen and (max-width: 800px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 #features,
+<<<<<<< HEAD
 #courses {
   margin-bottom: 100px;
+=======
+#courses,
+.card-container {
+  margin-bottom: 100px; /* Reduced margin for spacing */
+>>>>>>> 679716817b834482da0eae29c12f72fab23174c1
 }
 
 .feature,
@@ -211,6 +249,7 @@ main {
   }
 }
 
+<<<<<<< HEAD
 .card {
   width: 100%; /* Full width for transparent cards */
   background: rgba(255, 255, 255, 0.1);
@@ -242,4 +281,16 @@ main {
 
 .card-content h3 {
   color: rgb(7, 229, 245);
+=======
+.card:nth-child(2) {
+  transition-delay: 300ms;
+}
+
+.card:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.card:nth-child(4) {
+  transition-delay: 100ms;
+>>>>>>> 679716817b834482da0eae29c12f72fab23174c1
 }
