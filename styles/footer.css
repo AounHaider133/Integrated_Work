@@ -136,7 +136,7 @@ hr {
 @media (max-width: 768px) {
   .col {
     flex-basis: 100%;
-    padding: 10px;
+    padding: 5px;
   }
 
   .col h3 {
