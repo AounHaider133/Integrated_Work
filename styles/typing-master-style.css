@@ -88,7 +88,7 @@
 .content button {
   outline: none;
   border: none;
-  width: 105px;
+  width: 125px;
   color: #007acc;
   padding: 8px 0;
   font-size: 17px;
@@ -105,6 +105,11 @@
 .content button:hover {
   background: #ffffff;
 }
+
+.lvl-btn.clicked {
+  background: #ffffff;
+}
+
 .content .result-details {
   display: flex;
   flex-wrap: wrap;
@@ -182,4 +187,11 @@ li:not(:first-child) span {
   .content button {
     margin-top: 10px;
   }
+}
+
+.level-selection {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
 }
