@@ -1,263 +1,743 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/soft-ui-dashboard.min.css?v=1.0.2"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+    />
+    <link rel="stylesheet" href="./assets/css/theme.css" />
+    <link rel="stylesheet" href="./assets/css/loopple/loopple.css" />
+    <link rel="stylesheet" href="../styles/background.css" />
+    <link rel="stylesheet" href="../styles/nav-bar-style.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/scro]ll.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./nav-bar-script.js" />
+    <link rel="stylesheet" href="nav-bar-style.css" />
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="flex">
+        <a href="home.html" class="logo">Educa.</a>
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+        <form action="search.html" method="post" class="search-form">
+          <input
+            type="text"
+            name="search_box"
+            required
+            placeholder="search courses..."
+            maxlength="100"
+          />
+          <button type="submit" class="fas fa-search"></button>
+        </form>
 
-</head>
-<body>
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+        </div>
 
-<header class="header">
-   
-   <section class="flex">
-
-      <a href="home.html" class="logo">Educa.</a>
-
-      <form action="search.html" method="post" class="search-form">
-         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
-         <button type="submit" class="fas fa-search"></button>
-      </form>
-
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="search-btn" class="fas fa-search"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="toggle-btn" class="fas fa-sun"></div>
+        <div class="profile">
+          <img src="images/pic-1.jpg" class="image" alt="" />
+          <h3 class="name">shaikh anas</h3>
+          <p class="role">studen</p>
+          <a href="profile.html" class="btn">view profile</a>
+          <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="register.html" class="option-btn">register</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Top Nav Bar -->
+    <header class="header">
+      <a href="#" class="logo"
+        ><img
+          src="../assets/img/logo-bg-removed.png"
+          alt="CodeSprint.com"
+          height="42"
+          width="92"
+          style="padding-top: 10px; cursor: pointer"
+      /></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="./views/about.html">About</a>
+        <a href="./views/sign-up.html">Create Account</a>
+        <a href="./views/sign-in.html">Login</a>
+        <a href="./views/contact.html">Contact</a>
+        <a href="./views/typing-master.html">Typing Master</a>
+      </nav>
+    </header>
+    <div class="side-bar">
+      <div id="close-btn">
+        <i class="fas fa-times"></i>
       </div>
 
       <div class="profile">
-         <img src="images/pic-1.jpg" class="image" alt="">
-         <h3 class="name">shaikh anas</h3>
-         <p class="role">studen</p>
-         <a href="profile.html" class="btn">view profile</a>
-         <div class="flex-btn">
-            <a href="login.html" class="option-btn">login</a>
-            <a href="register.html" class="option-btn">register</a>
-         </div>
+        <img src="images/pic-1.jpg" class="image" alt="" />
+        <h3 class="name">shaikh anas</h3>
+        <p class="role">studen</p>
+        <a href="profile.html" class="btn">view profile</a>
       </div>
 
-   </section>
+      <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+        <a href="about.html"
+          ><i class="fas fa-question"></i><span>about</span></a
+        >
+        <a href="courses.html"
+          ><i class="fas fa-graduation-cap"></i><span>courses</span></a
+        >
+        <a href="teachers.html"
+          ><i class="fas fa-chalkboard-user"></i><span>teachers</span></a
+        >
+        <a href="contact.html"
+          ><i class="fas fa-headset"></i><span>contact us</span></a
+        >
+      </nav>
+    </div>
 
-</header>   
+    <section class="home-grid">
+      <h1 class="heading">quick options</h1>
 
-<div class="side-bar">
+      <div class="box-container">
+        <!--typing master box-->
+        <div
+          class="card box"
+          style="
+            background: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(50px);
+          "
+        >
+          <div class="card-body p-3">
+            <div class="row" style="display: flex">
+              <div class="col-lg-9">
+                <div class="d-flex flex-column h-100">
+                  <p class="mb-1 pt-2 text-bold"></p>
+                  <!--table for levels in typing master-->
+                  <h5 class="font-weight-bolder" style="color: aliceblue">
+                    <u>Typing Master</u>
+                  </h5>
+                  <div class="main-content" id="panel">
+                    <div class="container-fluid pt-3">
+                      <div
+                        class="card mb-4"
+                        style="
+                          background: rgba(255, 255, 255, 0.1);
+                          background-color: rgba(255, 255, 255, 0.2);
+                          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                          backdrop-filter: blur(50px);
+                        "
+                      >
+                        <div class="card-body px-0 pt-0 pb-2">
+                          <div class="table-responsive p-0">
+                            <table
+                              class="table align-items-center justify-content-center mb-0"
+                            >
+                              <thead>
+                                <tr>
+                                  <th
+                                    class="text-uppercase text-xxs font-weight-bolder opacity-7"
+                                    style="color: black"
+                                  >
+                                    level
+                                  </th>
+                                  <th
+                                    class="text-uppercase text-xxs font-weight-bolder opacity-7 ps-2"
+                                    style="color: black"
+                                  >
+                                    Status
+                                  </th>
+                                  <th
+                                    class="text-uppercase text-xxs font-weight-bolder text-center opacity-7 ps-2"
+                                    style="color: black"
+                                  >
+                                    progress
+                                  </th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2">
+                                      <div class="my-auto">
+                                        <h6 class="mb-0 text-sm">basic</h6>
+                                      </div>
+                                    </div>
+                                  </td>
 
-   <div id="close-btn">
-      <i class="fas fa-times"></i>
-   </div>
+                                  <td>
+                                    <span class="text-xs font-weight-bold"
+                                      >unlocked</span
+                                    >
+                                  </td>
+                                  <td class="align-middle text-center">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center"
+                                    >
+                                      <span
+                                        class="me-2 text-xs font-weight-bold"
+                                        >60%</span
+                                      >
+                                      <div>
+                                        <div class="progress">
+                                          <div
+                                            class="progress-bar bg-gradient-info"
+                                            role="progressbar"
+                                            aria-valuenow="60"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            style="width: 60%"
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle">
+                                    <button
+                                      class="btn btn-link text-secondary mb-0"
+                                    >
+                                      <i
+                                        class="fa fa-ellipsis-v text-xs"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2">
+                                      <div class="my-auto">
+                                        <h6 class="mb-0 text-sm">
+                                          intermediate
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </td>
 
-   <div class="profile">
-      <img src="images/pic-1.jpg" class="image" alt="">
-      <h3 class="name">shaikh anas</h3>
-      <p class="role">studen</p>
-      <a href="profile.html" class="btn">view profile</a>
-   </div>
+                                  <td>
+                                    <span class="text-xs font-weight-bold"
+                                      >locked</span
+                                    >
+                                  </td>
+                                  <td class="align-middle text-center">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center"
+                                    >
+                                      <span
+                                        class="me-2 text-xs font-weight-bold"
+                                        >100%</span
+                                      >
+                                      <div>
+                                        <div class="progress">
+                                          <div
+                                            class="progress-bar bg-gradient-info"
+                                            role="progressbar"
+                                            aria-valuenow="100"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            style="width: 100%"
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle">
+                                    <button
+                                      class="btn btn-link text-secondary mb-0"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <i
+                                        class="fa fa-ellipsis-v text-xs"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2">
+                                      <div class="my-auto">
+                                        <h6 class="mb-0 text-sm">difficult</h6>
+                                      </div>
+                                    </div>
+                                  </td>
 
-   <nav class="navbar">
-      <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
-      <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
-      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
-      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
-      <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
-   </nav>
+                                  <td>
+                                    <span class="text-xs font-weight-bold"
+                                      >locked</span
+                                    >
+                                  </td>
+                                  <td class="align-middle text-center">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center"
+                                    >
+                                      <span
+                                        class="me-2 text-xs font-weight-bold"
+                                        >30%</span
+                                      >
+                                      <div>
+                                        <div class="progress">
+                                          <div
+                                            class="progress-bar bg-gradient-info"
+                                            role="progressbar"
+                                            aria-valuenow="30"
+                                            aria-valuemin="0"
+                                            aria-valuemax="30"
+                                            style="width: 30%"
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle">
+                                    <button
+                                      class="btn btn-link text-secondary mb-0"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <i
+                                        class="fa fa-ellipsis-v text-xs"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-</div>
-
-<section class="home-grid">
-
-   <h1 class="heading">quick options</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <h3 class="title">likes and comments</h3>
-         <p class="likes">total likes : <span>25</span></p>
-         <a href="#" class="inline-btn">view likes</a>
-         <p class="likes">total comments : <span>12</span></p>
-         <a href="#" class="inline-btn">view comments</a>
-         <p class="likes">saved playlists : <span>4</span></p>
-         <a href="#" class="inline-btn">view playlists</a>
-      </div>
-
-      <div class="box">
-         <h3 class="title">top categories</h3>
-         <div class="flex">
-            <a href="#"><i class="fas fa-code"></i><span>development</span></a>
-            <a href="#"><i class="fas fa-chart-simple"></i><span>business</span></a>
-            <a href="#"><i class="fas fa-pen"></i><span>design</span></a>
-            <a href="#"><i class="fas fa-chart-line"></i><span>marketing</span></a>
-            <a href="#"><i class="fas fa-music"></i><span>music</span></a>
-            <a href="#"><i class="fas fa-camera"></i><span>photography</span></a>
-            <a href="#"><i class="fas fa-cog"></i><span>software</span></a>
-            <a href="#"><i class="fas fa-vial"></i><span>science</span></a>
-         </div>
-      </div>
-
-      <div class="box">
-         <h3 class="title">popular topics</h3>
-         <div class="flex">
-            <a href="#"><i class="fab fa-html5"></i><span>HTML</span></a>
-            <a href="#"><i class="fab fa-css3"></i><span>CSS</span></a>
-            <a href="#"><i class="fab fa-js"></i><span>javascript</span></a>
-            <a href="#"><i class="fab fa-react"></i><span>react</span></a>
-            <a href="#"><i class="fab fa-php"></i><span>PHP</span></a>
-            <a href="#"><i class="fab fa-bootstrap"></i><span>bootstrap</span></a>
-         </div>
-      </div>
-
-      <div class="box">
-         <h3 class="title">become a tutor</h3>
-         <p class="tutor">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, nam?</p>
-         <a href="teachers.html" class="inline-btn">get started</a>
-      </div>
-
-   </div>
-
-</section>
-
-
-
-<section class="courses">
-
-   <h1 class="heading">our courses</h1>
-
-   <div class="box-container">
-
-      <div class="box">
-         <div class="tutor">
-            <img src="images/pic-2.jpg" alt="">
-            <div class="info">
-               <h3>john deo</h3>
-               <span>21-10-2022</span>
+              <!--image typing master-->
+              <div
+                class="col-lg-3 ms-auto text-center mt-5 mt-lg-0"
+                style="
+                  height: 150;
+                  padding-top: 10px;
+                  display: flex;
+                  justify-content: center;
+                "
+              >
+                <img
+                  src="resize-17167971201849507381images.jpg"
+                  width="250"
+                  height="200"
+                  alt="waves"
+                  style="
+                    border-radius: 40%;
+                    border-radius: 12px;
+                    margin-top: 50px;
+                  "
+                />
+              </div>
             </div>
-         </div>
-         <div class="thumb">
-            <img src="images/thumb-1.png" alt="">
-            <span>10 videos</span>
-         </div>
-         <h3 class="title">complete HTML tutorial</h3>
-         <a href="playlist.html" class="inline-btn">view playlist</a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="box">
-         <div class="tutor">
-            <img src="images/pic-3.jpg" alt="">
-            <div class="info">
-               <h3>john deo</h3>
-               <span>21-10-2022</span>
+    <section class="home-grid">
+      <h1 class="heading">quick options</h1>
+
+      <div class="box-container">
+        <!--Quiz-box-->
+        <div
+          class="card box"
+          style="
+            background: rgba(255, 255, 255, 0.1);
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(50px);
+          "
+        >
+          <div class="card-body p-3">
+            <div class="row" style="display: flex">
+              <div class="col-lg-9">
+                <div class="d-flex flex-column h-100">
+                  <p class="mb-1 pt-2 text-bold"></p>
+                  <!--table for levels in typing master-->
+                  <h5 class="font-weight-bolder" style="color: aliceblue">
+                    <u>quizgame</u>
+                  </h5>
+                  <div class="main-content" id="panel">
+                    <div class="container-fluid pt-3">
+                      <div
+                        class="card mb-4"
+                        style="
+                          background: rgba(255, 255, 255, 0.1);
+                          background-color: rgba(255, 255, 255, 0.2);
+                          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                          backdrop-filter: blur(50px);
+                        "
+                      >
+                        <div class="card-body px-0 pt-0 pb-2">
+                          <div class="table-responsive p-0">
+                            <table
+                              class="table align-items-center justify-content-center mb-0"
+                            >
+                              <thead>
+                                <tr>
+                                  <th
+                                    class="text-uppercase text-xxs font-weight-bolder opacity-7"
+                                    style="color: black"
+                                  >
+                                    level
+                                  </th>
+                                  <th
+                                    class="text-uppercase text-xxs font-weight-bolder opacity-7 ps-2"
+                                    style="color: black"
+                                  >
+                                    Status
+                                  </th>
+                                  <th
+                                    class="text-uppercase text-xxs font-weight-bolder text-center opacity-7 ps-2"
+                                    style="color: black"
+                                  >
+                                    progress
+                                  </th>
+                                  <th></th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2">
+                                      <div class="my-auto">
+                                        <h6 class="mb-0 text-sm">basic</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+
+                                  <td>
+                                    <span class="text-xs font-weight-bold"
+                                      >unlocked</span
+                                    >
+                                  </td>
+                                  <td class="align-middle text-center">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center"
+                                    >
+                                      <span
+                                        class="me-2 text-xs font-weight-bold"
+                                        >60%</span
+                                      >
+                                      <div>
+                                        <div class="progress">
+                                          <div
+                                            class="progress-bar bg-gradient-info"
+                                            role="progressbar"
+                                            aria-valuenow="60"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            style="width: 60%"
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle">
+                                    <button
+                                      class="btn btn-link text-secondary mb-0"
+                                    >
+                                      <i
+                                        class="fa fa-ellipsis-v text-xs"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2">
+                                      <div class="my-auto">
+                                        <h6 class="mb-0 text-sm">
+                                          intermediate
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </td>
+
+                                  <td>
+                                    <span class="text-xs font-weight-bold"
+                                      >locked</span
+                                    >
+                                  </td>
+                                  <td class="align-middle text-center">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center"
+                                    >
+                                      <span
+                                        class="me-2 text-xs font-weight-bold"
+                                        >100%</span
+                                      >
+                                      <div>
+                                        <div class="progress">
+                                          <div
+                                            class="progress-bar bg-gradient-info"
+                                            role="progressbar"
+                                            aria-valuenow="100"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            style="width: 100%"
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle">
+                                    <button
+                                      class="btn btn-link text-secondary mb-0"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <i
+                                        class="fa fa-ellipsis-v text-xs"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <div class="d-flex px-2">
+                                      <div class="my-auto">
+                                        <h6 class="mb-0 text-sm">difficult</h6>
+                                      </div>
+                                    </div>
+                                  </td>
+
+                                  <td>
+                                    <span class="text-xs font-weight-bold"
+                                      >locked</span
+                                    >
+                                  </td>
+                                  <td class="align-middle text-center">
+                                    <div
+                                      class="d-flex align-items-center justify-content-center"
+                                    >
+                                      <span
+                                        class="me-2 text-xs font-weight-bold"
+                                        >30%</span
+                                      >
+                                      <div>
+                                        <div class="progress">
+                                          <div
+                                            class="progress-bar bg-gradient-info"
+                                            role="progressbar"
+                                            aria-valuenow="30"
+                                            aria-valuemin="0"
+                                            aria-valuemax="30"
+                                            style="width: 30%"
+                                          ></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </td>
+                                  <td class="align-middle">
+                                    <button
+                                      class="btn btn-link text-secondary mb-0"
+                                      aria-haspopup="true"
+                                      aria-expanded="false"
+                                    >
+                                      <i
+                                        class="fa fa-ellipsis-v text-xs"
+                                        aria-hidden="true"
+                                      ></i>
+                                    </button>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--image typing master-->
+              <div
+                class="col-lg-3 ms-auto text-center mt-5 mt-lg-0"
+                style="
+                  height: 150;
+                  padding-top: 10px;
+                  display: flex;
+                  justify-content: center;
+                "
+              >
+                <img
+                  src="quizpic.jpg"
+                  width="250"
+                  height="200"
+                  alt="waves"
+                  style="
+                    border-radius: 40%;
+                    border-radius: 12px;
+                    margin-top: 50px;
+                  "
+                />
+              </div>
             </div>
-         </div>
-         <div class="thumb">
-            <img src="images/thumb-2.png" alt="">
-            <span>10 videos</span>
-         </div>
-         <h3 class="title">complete CSS tutorial</h3>
-         <a href="playlist.html" class="inline-btn">view playlist</a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="box">
-         <div class="tutor">
-            <img src="images/pic-4.jpg" alt="">
+    <section class="courses">
+      <h1 class="heading">our courses</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-2.jpg" alt="" />
             <div class="info">
-               <h3>john deo</h3>
-               <span>21-10-2022</span>
+              <h3>john deo</h3>
+              <span>21-10-2022</span>
             </div>
-         </div>
-         <div class="thumb">
-            <img src="images/thumb-3.png" alt="">
+          </div>
+          <div class="thumb">
+            <img src="images/thumb-1.png" alt="" />
             <span>10 videos</span>
-         </div>
-         <h3 class="title">complete JS tutorial</h3>
-         <a href="playlist.html" class="inline-btn">view playlist</a>
-      </div>
+          </div>
+          <h3 class="title">complete HTML tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-      <div class="box">
-         <div class="tutor">
-            <img src="images/pic-5.jpg" alt="">
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-3.jpg" alt="" />
             <div class="info">
-               <h3>john deo</h3>
-               <span>21-10-2022</span>
+              <h3>john deo</h3>
+              <span>21-10-2022</span>
             </div>
-         </div>
-         <div class="thumb">
-            <img src="images/thumb-4.png" alt="">
+          </div>
+          <div class="thumb">
+            <img src="images/thumb-2.png" alt="" />
             <span>10 videos</span>
-         </div>
-         <h3 class="title">complete Boostrap tutorial</h3>
-         <a href="playlist.html" class="inline-btn">view playlist</a>
-      </div>
+          </div>
+          <h3 class="title">complete CSS tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-      <div class="box">
-         <div class="tutor">
-            <img src="images/pic-6.jpg" alt="">
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-4.jpg" alt="" />
             <div class="info">
-               <h3>john deo</h3>
-               <span>21-10-2022</span>
+              <h3>john deo</h3>
+              <span>21-10-2022</span>
             </div>
-         </div>
-         <div class="thumb">
-            <img src="images/thumb-5.png" alt="">
+          </div>
+          <div class="thumb">
+            <img src="images/thumb-3.png" alt="" />
             <span>10 videos</span>
-         </div>
-         <h3 class="title">complete JQuery tutorial</h3>
-         <a href="playlist.html" class="inline-btn">view playlist</a>
-      </div>
+          </div>
+          <h3 class="title">complete JS tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
 
-      <div class="box">
-         <div class="tutor">
-            <img src="images/pic-7.jpg" alt="">
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-5.jpg" alt="" />
             <div class="info">
-               <h3>john deo</h3>
-               <span>21-10-2022</span>
+              <h3>john deo</h3>
+              <span>21-10-2022</span>
             </div>
-         </div>
-         <div class="thumb">
-            <img src="images/thumb-6.png" alt="">
+          </div>
+          <div class="thumb">
+            <img src="images/thumb-4.png" alt="" />
             <span>10 videos</span>
-         </div>
-         <h3 class="title">complete SASS tutorial</h3>
-         <a href="playlist.html" class="inline-btn">view playlist</a>
+          </div>
+          <h3 class="title">complete Boostrap tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-6.jpg" alt="" />
+            <div class="info">
+              <h3>john deo</h3>
+              <span>21-10-2022</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <img src="images/thumb-5.png" alt="" />
+            <span>10 videos</span>
+          </div>
+          <h3 class="title">complete JQuery tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="images/pic-7.jpg" alt="" />
+            <div class="info">
+              <h3>john deo</h3>
+              <span>21-10-2022</span>
+            </div>
+          </div>
+          <div class="thumb">
+            <img src="images/thumb-6.png" alt="" />
+            <span>10 videos</span>
+          </div>
+          <h3 class="title">complete SASS tutorial</h3>
+          <a href="playlist.html" class="inline-btn">view playlist</a>
+        </div>
       </div>
 
-   </div>
+      <div class="more-btn">
+        <a href="courses.html" class="inline-option-btn">view all courses</a>
+      </div>
+    </section>
 
-   <div class="more-btn">
-      <a href="courses.html" class="inline-option-btn">view all courses</a>
-   </div>
+    <footer class="footer">
+      &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights
+      reserved!
+    </footer>
 
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<footer class="footer">
-
-   &copy; copyright @ 2022 by <span>mr. web designer</span> | all rights reserved!
-
-</footer>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-   
-</body>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
